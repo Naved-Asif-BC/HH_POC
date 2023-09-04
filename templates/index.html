@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Homepage</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the X-ray Checker</h1>
+        <div class="buttons">
+            <a href="{{ url_for('check_pneumonia') }}" class="btn">Check Pneumonia</a>
+            <a href="{{ url_for('check_fracture') }}" class="btn">Check Fracture</a>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
