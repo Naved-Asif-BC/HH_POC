@@ -44,7 +44,7 @@ def predict(img, model="Parts"):
 
 # Define a function to check pneumonia
 def check_pneumonia(file):
-    model = tf.keras.models.load_model('weights/EfficentNet.h5')
+    model = tf.keras.models.load_model('weights/our_model.h5')
     img = image.load_img(file, target_size=(224, 224))
     image_arr = image.img_to_array(img)
     image_arr = np.expand_dims(image_arr, axis=0)
